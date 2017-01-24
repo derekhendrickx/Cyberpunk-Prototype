@@ -64,6 +64,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4879077138169234}
+  - component: {fileID: 114088246443309560}
   m_Layer: 0
   m_Name: Enemy01
   m_TagString: Enemy01
@@ -2526,7 +2527,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c5335f0882fe4d478883cc8c58ce906, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
+  target: {fileID: 4672131773524754, guid: f1d64cecb00954ba5b5a506f32288e8c, type: 2}
+--- !u!114 &114088246443309560
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1047056053170788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d02955113edb94c0296a0ec119af256f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+  health: 100
+  speed: 0.5
 --- !u!114 &114411152553445546
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2543,8 +2558,8 @@ MonoBehaviour:
   m_JumpPower: 6
   m_GravityMultiplier: 2
   m_RunCycleLegOffset: 0.2
-  m_MoveSpeedMultiplier: 0.5
-  m_AnimSpeedMultiplier: 0.5
+  m_MoveSpeedMultiplier: 1
+  m_AnimSpeedMultiplier: 1
   m_GroundCheckDistance: 0.2
 --- !u!136 &136394465734603130
 CapsuleCollider:
